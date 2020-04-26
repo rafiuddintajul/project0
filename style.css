@@ -1,0 +1,58 @@
+
+#Intro {
+  font-size: 2rem;
+  font-family: "Arial Black", arial;
+  font-style: italic;
+}
+
+
+
+.history {
+  font-size: 1.7rem;
+}
+
+.years {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+
+
+img {
+  width: 100%;
+}
+
+footer {
+  font-size: 0.75em;
+}
+
+footer h5,footer p, footer ul{
+  font-size: 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer h3 {
+  font-size: 1.3em;
+}
+
+footer h3::after {
+  content: ":";
+}
+
+.tricks-box {
+  width: 100%;
+}
+
+ul.tricks {
+  width: 100%;
+  list-style-type: none;
+  column-count: 3;
+  column-gap: 20%;
+}
+
+@media (max-width: 600px){
+  ul.tricks {
+    column-count: 1;
+  }
+}
