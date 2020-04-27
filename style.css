@@ -3,6 +3,7 @@
   font-size: 2rem;
   font-family: "Arial Black", arial;
   font-style: italic;
+  margin-top: 20px;
 }
 
 .history {
@@ -15,16 +16,26 @@
 }
 
 a[href="#top-nav"] {
-  border: 1px solid blue;
+  padding: 10px 20px;
+  color: #98999c;
+  background-color: #383f4a;
+  margin: 10px 0px;
 }
 
+a[href="#top-nav"]:hover {
+  color: white;
+  background-color: #383f4a;
+  text-decoration: none;
+}
 
 img {
   width: 100%;
+  margin: 10px 0px;
 }
 
 footer {
   font-size: 0.75em;
+  margin-top: 10px;
 }
 
 footer h5,footer p, footer ul{
