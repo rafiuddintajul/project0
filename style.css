@@ -5,8 +5,6 @@
   font-style: italic;
 }
 
-
-
 .history {
   font-size: 1.7rem;
 }
@@ -16,6 +14,9 @@
   font-style: italic;
 }
 
+a[href="#top-nav"] {
+  border: 1px solid blue;
+}
 
 
 img {
