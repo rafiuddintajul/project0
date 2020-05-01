@@ -1,0 +1,107 @@
+$headerColor: #535c54;
+$buttonColor: #383f4a;
+
+%fullwidth {
+  width: 100%;
+}
+
+%content {
+  font-family: "Helvetica Narrow", sans-serif;
+  font-size: 1em;
+}
+
+#Intro {
+  font-size: 2.5rem;
+  color: $headerColor;
+  font-family: "Arial Black", arial;
+  font-style: italic;
+  margin-top: 21px;
+}
+
+.history {
+  color: $headerColor;
+  font-size: 1.7rem;
+}
+
+.years {
+  color: $headerColor;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.disclaimer {
+  display: block;
+}
+
+.skatepic {
+  height:100%;
+}
+
+.gallery {
+  margin: 10px;
+}
+
+p {
+  @extend %content;
+}
+
+img {
+  @extend %fullwidth;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+a[href="#top-nav"] {
+  padding: 10px 20px;
+  color: #98999c;
+  background-color: $buttonColor;
+  margin: 10px 0px;
+}
+
+a[href="#top-nav"]:hover {
+  color: white;
+  background-color: $buttonColor;
+  text-decoration: none;
+}
+
+footer {
+  border-top: 1px solid rgba(155, 156, 158, 0.3);
+  font-size: 0.75em;
+  padding-top: 10px;
+  margin-top: 30px;
+
+  h5, p, ol {
+    @extend %content;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  h3 {
+    color: $headerColor;
+    font-size: 1.3em;
+  }
+
+  h3::after {
+    content: ":";
+  }
+}
+
+
+.tricks-box {
+  @extend %fullwidth;
+}
+
+ul.tricks {
+  @extend %fullwidth;
+  list-style-type: none;
+  column-count: 3;
+  column-gap: 20%;
+}
+
+@media (max-width: 600px){
+  ul.tricks {
+    column-count: 1;
+  }
+}
